@@ -24,7 +24,7 @@ body {
 
 #content {
   width: 70%;
-  max-width: 800px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
