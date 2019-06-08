@@ -6,3 +6,11 @@
         </p>
     </div>
 </template>
+
+<style scoped>
+
+h2 {
+    margin-top: 20px;
+}
+
+</style>

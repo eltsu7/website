@@ -2,9 +2,9 @@
     <div class='row'>
         <div class='column'>
             <h1>Eeli Hernesniemi</h1>
-            <p>Studies <b>information technology</b> in <b>Tampere University</b>.</p>
+            <p>Studying my third year of information technology in Tampere University.</p>
             <p>{{ age }} years old.</p>
-            <p>Famous for creating and maintaining MarkkuBot.</p>
+            <p>Buzzwords: Python, C++, Linux, PostgreSQL, DigitalOcean, Docker</p>
         </div>
         <div class='column'>
             <img src="../assets/portrait.jpg" alt="Pic of Me">
@@ -22,8 +22,14 @@ export default {
         calculateAge() {
             var year = 365 * 24 * 60 * 60 * 1000;
             var birthday = new Date("1996.12.24")
+
+            // age in milliseconds
             var ageMs = Date.now() - birthday.getTime();
+
+            // age in years
             var age = ageMs / year;
+
+            // rounded to 1 decimal
             return Math.round( age * 10 ) / 10;
         }
     }
@@ -34,16 +40,21 @@ export default {
 .column {
     float: left;
     width: 45%;
-    padding: 10px
+    padding: 10px;
+    margin-top: 10px;
 }
 
 img {
     max-width: 100%;
-    float: right;
 }
 
 p {
     padding-left: 10px;
+    font-size: 17px;
+}
+
+h1 {
+    margin-top: 0px;
 }
 
 </style>
