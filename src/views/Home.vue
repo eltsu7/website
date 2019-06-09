@@ -21,7 +21,7 @@ export default {
     methods: {
         calculateAge() {
             var year = 365 * 24 * 60 * 60 * 1000;
-            var birthday = new Date("1996.12.24")
+            var birthday = new Date("1996-12-24T00:00:00")
 
             // age in milliseconds
             var ageMs = Date.now() - birthday.getTime();
