@@ -1,10 +1,18 @@
 <template>
   <div>
     <nav>
-      <router-link id='link' to='/' exact>Home</router-link>
-      <router-link id='link' to='/about' exact>About</router-link>
-      <a id='link' target="_blank" href="https://github.com/eltsu7/">GitHub</a>
-      <a id='link' target="_blank" href="https://eeli.kuvat.fi/">Gallery</a>
+      <li>
+        <router-link id='link' to='/' exact>Home</router-link>
+      </li>
+      <li>
+        <router-link id='link' to='/about' exact>About</router-link>
+      </li>
+      <li>
+        <a id='link' target="_blank" href="https://github.com/eltsu7/">GitHub</a>
+      </li>
+      <li>
+        <a id='link' target="_blank" href="https://eeli.kuvat.fi/">Gallery</a>
+      </li>
     </nav>
   </div>
 </template>
@@ -17,19 +25,21 @@ export default {
 
 <style scoped>
 nav {
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
   overflow: hidden;
-  list-style-type: none;
-  display: block;
+  list-style: none;
   background-color: #333;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
 }
 
 #link {
-  float: left;
-  display: block;
+  display: inline-block;
   color: white;
-  text-align: center;
   padding: 16px 20px;
   text-decoration: none;
 }
