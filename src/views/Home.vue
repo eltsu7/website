@@ -1,12 +1,12 @@
 <template>
     <div class='row'>
-        <div class='column'>
+        <div class='flex-item'>
             <h1>Eeli Hernesniemi</h1>
             <p>Studying my third year of information technology in Tampere University.</p>
             <p>{{ age }} years old.</p>
             <p>Buzzwords: Python, C++, Linux, PostgreSQL, DigitalOcean, Docker</p>
         </div>
-        <div class='column'>
+        <div class='flex-item'>
             <img src="../assets/portrait.jpg" alt="Pic of Me">
         </div>
     </div>
@@ -46,8 +46,8 @@ export default {
     align-items: center; 
 }
 
-.column {
-    width: 300px;
+.flex-item {
+    max-width: 300px;
     padding: 10px;
     margin-top: 10px;
 }
