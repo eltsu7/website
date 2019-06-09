@@ -37,9 +37,17 @@ export default {
 </script>
 
 <style scoped>
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 .column {
-    float: left;
-    width: 45%;
+    width: 300px;
     padding: 10px;
     margin-top: 10px;
 }
@@ -55,6 +63,7 @@ p {
 
 h1 {
     margin-top: 0px;
+
 }
 
 </style>
