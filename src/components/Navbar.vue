@@ -2,10 +2,10 @@
   <div>
     <nav>
       <li>
-        <router-link id='link' to='/' exact>Home</router-link>
+        <router-link id='link' to='/' exact>About</router-link>
       </li>
       <li>
-        <router-link id='link' to='/about' exact>About</router-link>
+        <router-link id='link' to='/blog' exact>Blog</router-link>
       </li>
       <li>
         <a id='link' target="_blank" href="https://github.com/eltsu7/">GitHub</a>
