@@ -5,7 +5,7 @@
         <router-link id='link' to='/' exact>About</router-link>
       </li>
       <li>
-        <router-link id='link' to='/blog' exact>Blog</router-link>
+        <router-link id='link' to='/blog/' exact>Blog</router-link>
       </li>
       <li>
         <a id='link' target="_blank" href="https://github.com/eltsu7/">GitHub</a>
